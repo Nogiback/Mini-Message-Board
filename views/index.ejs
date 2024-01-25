@@ -8,9 +8,11 @@
     <h1><%= title %></h1>
     <ul>
       <% messages.forEach(function(message) { %>
-      <li>Name: <%= message.user %></li>
-      <li>Message: <%= message.text %></li>
-      <li>Date: <%= message.added %></li>
+      <div class="text-box">
+        <li>Name: <%= message.user %></li>
+        <li>Message: <%= message.text %></li>
+        <li>Date: <%= message.added %></li>
+      </div>
       <%});%>
     </ul>
     <a href="/new">Click to Add a Message!</a>
